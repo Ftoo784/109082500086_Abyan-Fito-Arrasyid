@@ -1,7 +1,6 @@
 # <h1 align="center">Laporan Praktikum Modul 2 </h1>
 <p align="center">[Abyan Fito Arrasyid] - [109082500086]</p>
-
-## Laprak
+<br>
 
 ### 1. [Soal]
 #### soal latihan modul 2A
