@@ -29,10 +29,7 @@ func main() {
 	fmt.Println(permutasiBD, permutasiBD/faktorialD)
 }
 ```
-### Output Unguided :![Uploading Screenshot 2026-03-19 013847.png…]()
-
-
-##### Output 
-![Screenshot Output Unguided 1_1]()
-[penjelasan]
+### Output Soal 1 :
+![Screenshot Output Unguided 1_1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal1.png)
+[Program pertama membaca empat bilangan yaitu a, b, c, dan d, lalu diminta menghitung permutasi dan kombinasi dari pasangan (a, c) dan (b, d). Permutasi digunakan untuk menghitung banyaknya cara penyusunan dengan memperhatikan urutan, sedangkan kombinasi menghitung banyaknya cara tanpa memperhatikan urutan. Cara menghitungnya dilakukan dengan perkalian menurun untuk permutasi, lalu hasilnya dibagi dengan faktorial untuk mendapatkan kombinasi. Program membaca input, menghitung kedua nilai tersebut untuk masing-masing pasangan, lalu menampilkan hasilnya dalam dua baris.]
 
