@@ -30,6 +30,25 @@ func main() {
 }
 ```
 ### Output Soal 1 :
-![Screenshot Output Unguided 1_1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal1.png)
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal1.png)
 [Program pertama membaca empat bilangan yaitu a, b, c, dan d, lalu diminta menghitung permutasi dan kombinasi dari pasangan (a, c) dan (b, d). Permutasi digunakan untuk menghitung banyaknya cara penyusunan dengan memperhatikan urutan, sedangkan kombinasi menghitung banyaknya cara tanpa memperhatikan urutan. Cara menghitungnya dilakukan dengan perkalian menurun untuk permutasi, lalu hasilnya dibagi dengan faktorial untuk mendapatkan kombinasi. Program membaca input, menghitung kedua nilai tersebut untuk masing-masing pasangan, lalu menampilkan hasilnya dalam dua baris.]
 
+### 2. [Soal2]
+#### soal2.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var a, b, c int
+	fmt.Scan(&a, &b, &c)
+
+	fmt.Println((a - 1) * (a - 1))
+	fmt.Println(b*b - 1)
+	fmt.Println((c-2)*(c-2) + 1)
+}
+```
+### Output Soal 2 :
+![Screenshot Output soal2]()
