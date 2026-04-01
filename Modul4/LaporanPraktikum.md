@@ -46,67 +46,93 @@ func main() {
 }
 ```
 ### Output Soal 1 :
-![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal1.png)
-[Program pertama membaca empat bilangan yaitu a, b, c, dan d, lalu diminta menghitung permutasi dan kombinasi dari pasangan (a, c) dan (b, d). Permutasi digunakan untuk menghitung banyaknya cara penyusunan dengan memperhatikan urutan, sedangkan kombinasi menghitung banyaknya cara tanpa memperhatikan urutan. Cara menghitungnya dilakukan dengan perkalian menurun untuk permutasi, lalu hasilnya dibagi dengan faktorial untuk mendapatkan kombinasi. Program membaca input, menghitung kedua nilai tersebut untuk masing-masing pasangan, lalu menampilkan hasilnya dalam dua baris.]
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul4/Output/Soal1.png)
+[Program ini digunakan untuk menghitung nilai permutasi dan kombinasi dari dua pasang bilangan yang diberikan oleh pengguna Proses perhitungan dilakukan secara modular dengan memanfaatkan tiga fungsi, yaitu faktorial, permutasi, dan kombinasi. Prosedur faktorial digunakan untuk menghitung nilai faktorial dari suatu bilangan, yang kemudian dimanfaatkan oleh prosedur permutasi untuk menghitung nilai permutasi dan oleh prosedur kombinasi untuk menghitung nilai kombinasi.]
 
 ### 2. [Soal2]
 #### soal2.go
 
 ```go
 package main
-
 import "fmt"
 
-func main() {
-	var a, b, c int
-	fmt.Scan(&a, &b, &c)
+func hitungSkor(waktu [8]int, soal *int, skor *int) {
+	*soal = 0
+	*skor = 0
 
-	fmt.Println((a - 1) * (a - 1))
-	fmt.Println(b*b - 1)
-	fmt.Println((c-2)*(c-2) + 1)
+	for i := 0; i < 8; i++ {
+		if waktu[i] <= 300 {
+			*soal++
+			*skor += waktu[i]
+		}
+	}
+}
+
+func main() {
+	var nama, pemenang string
+	var waktu [8]int
+	var soal, skor int
+	var maxSoal, minSkor int
+	var first = true
+
+	for {
+		fmt.Scan(&nama)
+		if nama == "Selesai" {
+			break
+		}
+
+		for i := 0; i < 8; i++ {
+			fmt.Scan(&waktu[i])
+		}
+
+		hitungSkor(waktu, &soal, &skor)
+
+		if first || soal > maxSoal || (soal == maxSoal && skor < minSkor) {
+			first = false
+			maxSoal = soal
+			minSkor = skor
+			pemenang = nama
+		}
+	}
+
+	fmt.Println(pemenang, maxSoal, minSkor)
 }
 ```
 ### Output Soal 2 :
-![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal2.png)
-[Program ini menghitung hasil dari beberapa komposisi fungsi seperti f(g(h(x))), g(h(f(x))), dan h(f(g(x))). Cara menyelesaikannya adalah dengan mengerjakan fungsi dari bagian paling dalam terlebih dahulu, kemudian ke luar secara berurutan. Setelah disederhanakan, setiap komposisi dapat diubah menjadi bentuk matematika yang lebih sederhana sehingga lebih mudah dihitung. Program kemudian hanya perlu memasukkan nilai a, b, dan c ke dalam hasil fungsi yang sudah disederhanakan tersebut dan mencetak hasilnya.] 
+![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul4/Output/Soal2.png)
+[Program ini digunakan untuk menentukan pemenang dalam suatu kompetisi pemrograman berdasarkan jumlah soal yang berhasil diselesaikan dan total waktu pengerjaan. Setiap peserta memiliki satu nama dan delapan data waktu pengerjaan soal dalam satuan menit. Program menggunakan prosedur hitungSkor untuk menghitung jumlah soal yang berhasil diselesaikan, yaitu soal tidak lebih dari 300 menit, serta menghitung total waktu dari soal tersebut. Data peserta dibaca berulang ulang sampai ada penanda “Selesai”. Pemenang ditentukan berdasarkan jumlah soal terbanyak yang berhasil diselesaikan, dan apabila terdapat jumlah yang sama, maka dipilih peserta dengan total waktu paling kecil. Hasil akhir berupa nama pemenang, jumlah soal yang diselesaikan, serta total waktu yang dibutuhkan ditampilkan dalam satu baris keluaran.] 
 
 ### 3. [Soal3]
 #### soal3.go
 
 ```go
 package main
+import "fmt"
 
-import (
-	"fmt"
-	"math"
-)
+func cetakDeret(n int) {
+	for {
+		fmt.Print(n)
+
+		if n == 1 {
+			break
+		}
+
+		fmt.Print(" ")
+
+		if n%2 == 0 {
+			n = n / 2
+		} else {
+			n = 3*n + 1
+		}
+	}
+}
 
 func main() {
-	var cx1, cy1, r1 float64
-	var cx2, cy2, r2 float64
-	var x, y float64
-
-	fmt.Scan(&cx1, &cy1, &r1)
-	fmt.Scan(&cx2, &cy2, &r2)
-	fmt.Scan(&x, &y)
-
-	jarak1 := math.Sqrt((x-cx1)*(x-cx1) + (y-cy1)*(y-cy1))
-	jarak2 := math.Sqrt((x-cx2)*(x-cx2) + (y-cy2)*(y-cy2))
-
-	dalam1 := jarak1 <= r1
-	dalam2 := jarak2 <= r2
-
-	if dalam1 && dalam2 {
-		fmt.Println("Titik di dalam lingkaran 1 dan 2")
-	} else if dalam1 {
-		fmt.Println("Titik di dalam lingkaran 1")
-	} else if dalam2 {
-		fmt.Println("Titik di dalam lingkaran 2")
-	} else {
-		fmt.Println("Titik di luar lingkaran 1 dan 2")
-	}
+	var n int
+	fmt.Scan(&n)
+	cetakDeret(n)
 }
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal3.png)
-[Program ini menentukan sebuah titik yang berada di dalam lingkaran pertama, lingkaran kedua, keduanya, atau di luar keduanya. Hal ini dilakukan dengan menghitung jarak antara titik dan pusat lingkaran menggunakan rumus jarak. Jika jarak lebih kecil atau sama dengan jari-jari, maka titik berada di dalam lingkaran tersebut. Program akan membandingkan hasil untuk kedua lingkaran dan menggunakan percabangan untuk menentukan posisi akhir titik, lalu mencetak hasil sesuai kondisi yang terpenuhi.]
+![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul4/Output/Soal3.png)
+[Program ini digunakan untuk menampilkan deret bilangan berdasarkan aturan Skiena. Program menerima sebuah bilangan bulat positif sebagai nilai awal, kemudian program mencetak deret bilangan dengan aturan bahwa jika bilangan saat ini genap maka dibagi dua, tetapi jika ganjil maka dikalikan tiga lalu ditambah satu. Proses ini dilakukan secara berulang hingga mencapai nilai 1 untuk kondisi berhenti. Pencetakan deret dilakukan dalam satu baris dan setiap suku dipisahkan oleh spasi. Untuk menjaga struktur modular, proses pembentukan dan pencetakan deret dilakukan di dalam prosedur cetakDeret yang menerima satu parameter masukan. Program ini memastikan bahwa setiap nilai awal yang diberikan akan menghasilkan deret yang berakhir pada angka 1.]
