@@ -1,15 +1,17 @@
-package main
-
+package main 
 import "fmt"
+func main () {
+	var x int
+	fmt.Scan(&x)
 
-func main() {
-	var N int
-	fmt.Scan(&N)
-
-	for i := 1; i <= N; i++ {
-		for j := 1; j <= i; j++ {
-			fmt.Print("*")
-		}
-		fmt.Println()
+	for i:=0; i<=x; i++ {
+		fmt.Printf("%d ",fibonaci(i))
 	}
+}
+
+func fibonaci(n int)int{
+	if x <= 1 {
+		return x
+	}
+	return fibonaci(x-1) + fibonaci(x-2)
 }
