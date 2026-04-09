@@ -1,14 +1,17 @@
 package main
-
 import "fmt"
 
-func main() {
-	var N int
-	fmt.Scan(&N)
-
-	for i := 1; i <= N; i++ {
-		if N%i == 0 {
-			fmt.Print(i, " ")
-		}
+func pembagian (n int, i int){
+	if n%i == 0{
+		fmt.Print(i," ")
 	}
+	if n>=i{
+		pembagian(n,i+1)
+	}
+}
+
+func main (){
+	var n int
+	fmt.Scan(&n)
+	pembagian(n,1)
 }
