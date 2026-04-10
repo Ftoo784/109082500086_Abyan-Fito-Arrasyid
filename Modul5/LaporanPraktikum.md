@@ -6,59 +6,64 @@
 
 ```go
 package main
-
 import "fmt"
-func main() {
-    var N int
-    fmt.Scan(&N)
 
-    for i := 1; i <= N; i++ {
-        for j := 1; j <= i; j++ {
-            fmt.Print("*")
-        }
-        fmt.Println()
-    }
+func fibonacci(n int) int {
+	if n == 0 {
+		return 0
+	} else if n == 1 {
+		return 1
+	}
+	return fibonacci(n-1) + fibonacci(n-2)
 }
+
+func main() {
+	fmt.Print("n   ")
+	for i := 0; i <= 10; i++ {
+		fmt.Printf("%d ", i)
+	}
+	fmt.Println()
+
+	fmt.Print("Sₙ  ")
+	for i := 0; i <= 10; i++ {
+		fmt.Printf("%d ", fibonacci(i))
+	}
+	fmt.Println()
+}
+
 ```
 ### Output Soal 1 :
 ![Screenshot Output soal1]()
-[Program ini digunakan untuk menghasilkan pola segitiga siku-siku menggunakan karakter bintang sesuai dengan input dari pengguna. Program bekerja dengan menerima nilai integer sebagai penentu tinggi pola, kemudian menggunakan logika perulangan bertingkat untuk menyusun karakter secara sistematis. Perulangan utama berfungsi untuk mengatur alur baris secara vertikal, sementara perulangan di dalamnya secara dinamis mencetak jumlah bintang yang meningkat secara linear mengikuti nomor baris yang sedang berjalan. Hasil akhirnya adalah sebuah struktur pola geometris, di mana setiap baris baru akan dieksekusi secara otomatis hingga mencapai batas nilai yang telah ditentukan, memastikan output yang dihasilkan rapi dan sesuai dengan spesifikasi input yang diberikan.]
+[Program ini digunakan untuk menghitung dan menampilkan deret angka Fibonacci secara berurutan dari indeks 0 hingga 10. Secara teknis, program ini menggunakan metode rekursi pada fungsi `fibonacci` untuk menentukan nilai setiap elemen, di mana setiap angka didapatkan dari penjumlahan dua angka sebelumnya dengan kondisi dasar nilai 0 dan 1. Pada bagian eksekusi utama, program melakukan iterasi sistematis untuk memformat output ke dalam bentuk tabel sederhana yang memetakan hubungan antara indeks $n$ dengan hasil deret S &_n. Mekanisme ini memastikan data tersaji secara terstruktur, memudahkan pengguna untuk melihat perkembangan nilai deret yang meningkat secara eksponensial seiring bertambahnya indeks, sekaligus mendemonstrasikan penerapan algoritma rekursif dalam menangani barisan matematika kompleks.]
 
 ### 2. [Soal2]
 #### soal2.go
 
 ```go
 package main
-
 import "fmt"
 
-func fibonacci(n int) int {
-    if n == 0 {
-        return 0
-    } else if n == 1 {
-        return 1
-    }
-    return fibonacci(n-1) + fibonacci(n-2)
+func bintang(x int) {
+	if x != 0 {
+		fmt.Print("*")
+		bintang(x - 1)
+	}
 }
 
 func main() {
-    fmt.Print("n   ")
-    for i := 0; i <= 10; i++ {
-        fmt.Printf("%d ", i)
-    }
-    fmt.Println()
+	var y int
+	fmt.Scan(&y)
 
-    fmt.Print("Sₙ  ")
-    for i := 0; i <= 10; i++ {
-        fmt.Printf("%d ", fibonacci(i))
-    }
-    fmt.Println()
+	for i := 1; i <= y; i++ {
+		bintang(i)
+		fmt.Println()
+	}
 }
 
 ```
 ### Output Soal 2 :
 ![Screenshot Output soal2]()
-[Program ini digunakan untuk menghitung dan menampilkan deret angka Fibonacci secara berurutan dari indeks 0 hingga 10. Secara teknis, program ini menggunakan metode rekursi pada fungsi `fibonacci` untuk menentukan nilai setiap elemen, di mana setiap angka didapatkan dari penjumlahan dua angka sebelumnya dengan kondisi dasar nilai 0 dan 1. Pada bagian eksekusi utama, program melakukan iterasi sistematis untuk memformat output ke dalam bentuk tabel sederhana yang memetakan hubungan antara indeks $n$ dengan hasil deret S &_n. Mekanisme ini memastikan data tersaji secara terstruktur, memudahkan pengguna untuk melihat perkembangan nilai deret yang meningkat secara eksponensial seiring bertambahnya indeks, sekaligus mendemonstrasikan penerapan algoritma rekursif dalam menangani barisan matematika kompleks.] 
+[Program ini digunakan untuk menghasilkan pola segitiga siku-siku menggunakan karakter bintang sesuai dengan input dari pengguna. Program bekerja dengan menerima nilai integer sebagai penentu tinggi pola, kemudian menggunakan logika perulangan bertingkat untuk menyusun karakter secara sistematis. Perulangan utama berfungsi untuk mengatur alur baris secara vertikal, sementara perulangan di dalamnya secara dinamis mencetak jumlah bintang yang meningkat secara linear mengikuti nomor baris yang sedang berjalan. Hasil akhirnya adalah sebuah struktur pola geometris, di mana setiap baris baru akan dieksekusi secara otomatis hingga mencapai batas nilai yang telah ditentukan, memastikan output yang dihasilkan rapi dan sesuai dengan spesifikasi input yang diberikan.] 
 
 ### 3. [Soal3]
 #### soal3.go
@@ -67,20 +72,21 @@ func main() {
 package main
 import "fmt"
 
-func pembagian (n int, i int){
-	if n%i == 0{
-		fmt.Print(i," ")
+func pembagian(x int, i int) {
+	if x%i == 0 {
+		fmt.Print(i, " ")
 	}
-	if n>=i{
-		pembagian(n,i+1)
+	if x >= i {
+		pembagian(x, i+1)
 	}
 }
 
-func main (){
-	var n int
-	fmt.Scan(&n)
-	pembagian(n,1)
+func main() {
+	var x int
+	fmt.Scan(&x)
+	pembagian(x, 1)
 }
+
 ```
 ### Output Soal 3 :
 ![Screenshot Output soal3]()
@@ -91,8 +97,8 @@ func main (){
 
 ```go
 package main
-
 import "fmt"
+
 func tampilkanBarisan(n int) {
 	if n == 1 {
 		fmt.Print(n, " ")
@@ -120,8 +126,8 @@ func main() {
 
 ```go
 package main
-
 import "fmt"
+
 func cetakGanjil(n int) {
 	if n <= 0 {
 		return
@@ -151,6 +157,7 @@ func main() {
 package main
 
 import "fmt"
+
 func pangkat(x int, y int) int {
 	if y == 0 {
 		return 1
