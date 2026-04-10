@@ -1,26 +1,20 @@
 package main
-
 import "fmt"
 
-func fibonacci(n int) int {
-	if n == 0 {
-		return 0
-	} else if n == 1 {
-		return 1
+func bintang(x int) {
+	if x != 0 {
+		fmt.Print("*")
+		bintang(x - 1)
 	}
-	return fibonacci(n-1) + fibonacci(n-2)
 }
 
 func main() {
-	fmt.Print("n   ")
-	for i := 0; i <= 10; i++ {
-		fmt.Printf("%d ", i)
-	}
-	fmt.Println()
+	var y int
+	fmt.Scan(&y)
 
-	fmt.Print("Sₙ  ")
-	for i := 0; i <= 10; i++ {
-		fmt.Printf("%d ", fibonacci(i))
+	for i := 1; i <= y; i++ {
+		bintang(i)
+		fmt.Println()
 	}
-	fmt.Println()
 }
+
