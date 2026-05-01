@@ -38,8 +38,8 @@ func main() {
 }
 ```
 ### Output Soal 1 :
-![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul5/output/Soal1.png)
-[Program ini digunakan untuk menghitung dan menampilkan deret angka Fibonacci secara berurutan dari indeks 0 hingga 10. Secara teknis, program ini menggunakan metode rekursi pada fungsi `fibonacci` untuk menentukan nilai setiap elemen, di mana setiap angka didapatkan dari penjumlahan dua angka sebelumnya dengan kondisi dasar nilai 0 dan 1. Pada bagian eksekusi utama, program melakukan iterasi sistematis untuk memformat output ke dalam bentuk tabel sederhana yang memetakan hubungan antara indeks $n$ dengan hasil deret S &_n. Mekanisme ini memastikan data tersaji secara terstruktur, memudahkan pengguna untuk melihat perkembangan nilai deret yang meningkat secara eksponensial seiring bertambahnya indeks, sekaligus mendemonstrasikan penerapan algoritma rekursif dalam menangani barisan matematika kompleks.]
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal1.png)
+[Program ini membaca dua lingkaran yang masing-masing didefinisikan oleh koordinat pusat dan jari-jari, lalu membaca satu titik sembarang. Program kemudian menghitung jarak titik tersebut ke masing-masing pusat lingkaran menggunakan rumus jarak Euclidean. Jika jarak titik ke pusat lingkaran lebih kecil atau sama dengan jari-jari, maka titik dianggap berada di dalam lingkaran tersebut. Berdasarkan hasil pengecekan terhadap kedua lingkaran, program menentukan apakah titik berada di dalam lingkaran pertama, lingkaran kedua, keduanya, atau di luar keduanya, lalu menampilkan hasilnya sesuai format yang diminta.]
 
 ### 2. [Soal2]
 #### soal2.go
@@ -110,8 +110,8 @@ func main() {
 }
 ```
 ### Output Soal 2 :
-![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul5/output/Soal2.png)
-[Program ini digunakan untuk menghasilkan pola segitiga siku-siku menggunakan karakter bintang sesuai dengan input dari pengguna. Program bekerja dengan menerima nilai integer sebagai penentu tinggi pola, kemudian menggunakan logika perulangan bertingkat untuk menyusun karakter secara sistematis. Perulangan utama berfungsi untuk mengatur alur baris secara vertikal, sementara perulangan di dalamnya secara dinamis mencetak jumlah bintang yang meningkat secara linear mengikuti nomor baris yang sedang berjalan. Hasil akhirnya adalah sebuah struktur pola geometris, di mana setiap baris baru akan dieksekusi secara otomatis hingga mencapai batas nilai yang telah ditentukan, memastikan output yang dihasilkan rapi dan sesuai dengan spesifikasi input yang diberikan.] 
+![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal2.png)
+Baris pertama adalah jumlah elemen array, lalu diikuti isi array sebanyak n angka. Setelah itu dimasukkan nilai x untuk indeks kelipatan, kemudian indeks yang ingin dihapus, dan terakhir angka yang ingin dicari frekuensinya. Program ini bekerja dengan membaca sejumlah bilangan ke dalam array, lalu menampilkan berbagai informasi seperti seluruh isi array, elemen pada indeks ganjil dan genap, serta elemen dengan indeks kelipatan tertentu. Program juga dapat menghapus elemen pada indeks tertentu dan menampilkan hasil array setelah penghapusan. Selanjutnya, program menghitung rata-rata dan standar deviasi dari data yang ada, lalu menghitung berapa kali suatu angka muncul di dalam array.] 
 
 ### 3. [Soal3]
 #### soal3.go
@@ -156,8 +156,10 @@ func main() {
 
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul5/output/Soal3.png)
-[Program ini digunakan untuk mengidentifikasi dan menampilkan seluruh faktor pembagi dari suatu bilangan bulat positif yang diinput oleh pengguna. Secara operasional, program menerima nilai variabel N dan melakukan pemindaian sistematis menggunakan struktur perulangan yang berjalan dari angka satu hingga nilai N itu sendiri. Di dalam setiap iterasi, program menerapkan logika pengujian modulus untuk memeriksa apakah bilangan tersebut habis dibagi oleh indeks perulangan saat ini tanpa sisa. Jika kondisi terpenuhi, angka tersebut diklasifikasikan sebagai faktor dan langsung dicetak ke layar secara horizontal dengan spasi sebagai pemisah. Mekanisme ini secara efektif menyaring komponen pembagi bilangan secara tuntas, memberikan hasil yang akurat dalam memetakan semua pembagi asli dari angka yang diuji.]
+![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal3.png)
+[Program ini digunakan untuk menentukan hasil dari beberapa pertandingan antara dua klub yang diinput oleh pengguna. Pertama, pengguna diminta untuk memasukkan nama dua klub yang akan bertanding. Setelah itu, program akan membaca skor dari setiap pertandingan secara berulang. Setiap skor terdiri dari dua bilangan yang mewakili jumlah gol dari masing-masing klub. Proses input ini akan terus berlangsung hingga pengguna memasukkan nilai negatif pada salah satu skor sebagai tanda untuk menghentikan input.
+Selama proses tersebut, program tidak langsung menampilkan hasil pertandingan, melainkan menyimpan terlebih dahulu hasilnya ke dalam sebuah struktur data berupa slice. Jika skor klub A lebih besar dari klub B, maka nama klub A disimpan sebagai pemenang. Sebaliknya, jika skor klub B lebih besar, maka nama klub B yang disimpan. Jika kedua skor sama, maka hasil pertandingan dicatat sebagai “Draw”.
+Setelah seluruh data pertandingan selesai dimasukkan, program kemudian menampilkan hasil dari setiap pertandingan secara berurutan sesuai dengan urutan input.]
 
 ### 4. [Soal4]
 #### soal4.go
@@ -222,7 +224,7 @@ func main() {
 }
 ```
 ### Output Soal 4 :
-![Screenshot Output soal4](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul5/output/Soal4.png)
-[Program yang menggunakan teknik rekursi untuk menghasilkan barisan bilangan dengan pola simetris atau pencerminan. Secara teknis, fungsi `tampilkanBarisan` bekerja dengan mencetak nilai n saat ini sebelum melakukan pemanggilan fungsi itu sendiri secara turun atau descending dan mencetak kembali nilai n setelah pemanggilan rekursif tersebut selesai secara naik atau ascending. Proses ini berlanjut hingga mencapai kondisi berhenti ketika n bernilai satu, di mana program hanya akan mencetak angka satu kali. Hasil akhirnya adalah sebuah urutan angka yang menyusut hingga ke titik pusat dan kemudian berkembang kembali ke nilai semula, menciptakan alur logika yang dihasilkan dalam bentuk barisan bilangan horizontal yang rapi dan terstruktur sesuai dengan input yang dimasukkan oleh pengguna.]
-akhir yang akurat sesuai dengan prinsip matematika eksponensial berdasarkan input yang diberikan oleh pengguna.]
+![Screenshot Output soal4](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal4.png)
+[Program ini bertujuan untuk membaca sekumpulan karakter dari input pengguna, kemudian memprosesnya untuk dibalik dan diperiksa apakah termasuk palindrom atau tidak. Data karakter disimpan dalam sebuah array bertipe rune dengan kapasitas maksimum tertentu. Proses pengisian array dilakukan satu per satu hingga pengguna memasukkan tanda titik sebagai penanda akhir atau kapasitas array telah penuh.
+Setelah data berhasil disimpan, program membalik urutan karakter dalam array menggunakan proses pertukaran elemen dari kedua ujung menuju tengah. Hasil pembalikan tersebut kemudian ditampilkan ke layar sebagai teks terbalik. Selanjutnya, program melakukan pemeriksaan palindrom dengan cara membandingkan karakter dari sisi depan dan belakang secara berpasangan. Jika seluruh pasangan karakter sama, maka teks tersebut dinyatakan sebagai palindrom, sebaliknya jika terdapat perbedaan maka bukan palindrom. Pada akhirnya, program menampilkan hasil pemeriksaan tersebut dalam bentuk nilai boolean.]
 
