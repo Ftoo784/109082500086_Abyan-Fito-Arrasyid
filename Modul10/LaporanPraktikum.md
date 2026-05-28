@@ -131,5 +131,5 @@ func main() {
 }
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3]()
+![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal3.png)
 [Program ini digunakan untuk membantu petugas posyandu dalam mencatat dan mengolah data berat balita. Data berat balita dimasukkan ke dalam array bertipe float64 sehingga dapat menyimpan nilai desimal. Program memiliki dua subprogram utama, yaitu hitungMinMax dan rerata. Subprogram hitungMinMax digunakan untuk mencari nilai berat balita paling kecil dan paling besar dengan cara membandingkan seluruh data dalam array secara berulang. Nilai minimum dan maksimum kemudian dikirim kembali menggunakan parameter pointer. Selanjutnya, subprogram rerata digunakan untuk menghitung rata rata berat balita dengan menjumlahkan seluruh data berat kemudian membaginya dengan jumlah data yang dimasukkan. Setelah seluruh proses selesai dilakukan, program akan menampilkan berat minimum, berat maksimum, dan nilai rata rata berat balita sebagai hasil akhir.]
