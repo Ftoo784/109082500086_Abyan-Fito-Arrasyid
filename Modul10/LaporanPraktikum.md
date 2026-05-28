@@ -35,8 +35,8 @@ func main() {
 }
 ```
 ### Output Soal 1 :
-![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal1.png)
-[Program ini membaca dua lingkaran yang masing-masing didefinisikan oleh koordinat pusat dan jari-jari, lalu membaca satu titik sembarang. Program kemudian menghitung jarak titik tersebut ke masing-masing pusat lingkaran menggunakan rumus jarak Euclidean. Jika jarak titik ke pusat lingkaran lebih kecil atau sama dengan jari-jari, maka titik dianggap berada di dalam lingkaran tersebut. Berdasarkan hasil pengecekan terhadap kedua lingkaran, program menentukan apakah titik berada di dalam lingkaran pertama, lingkaran kedua, keduanya, atau di luar keduanya, lalu menampilkan hasilnya sesuai format yang diminta.]
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal1.png)
+[Program ini digunakan untuk mencari nilai berat kelinci paling kecil dan paling besar dari sejumlah data yang dimasukkan pengguna. Pada awal program, pengguna diminta memasukkan jumlah anak kelinci yang akan didata, kemudian data berat setiap kelinci disimpan ke dalam array bertipe float64 agar dapat menampung bilangan desimal. Setelah semua data berhasil dimasukkan, program menganggap data pertama sebagai nilai awal minimum dan maksimum. Selanjutnya dilakukan proses perulangan untuk membandingkan seluruh data berat yang ada di dalam array. Jika ditemukan berat yang lebih kecil dari nilai minimum, maka nilai minimum akan diperbarui. Begitu juga jika ditemukan berat yang lebih besar dari nilai maksimum, maka nilai maksimum akan diganti dengan data tersebut. Setelah seluruh data selesai diperiksa, program akan menampilkan berat kelinci terkecil dan terbesar sebagai hasil akhir.]
 
 ### 2. [Soal2]
 #### soal2.go
@@ -74,8 +74,8 @@ func main() {
 }
 ```
 ### Output Soal 2 :
-![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal2.png)
-Baris pertama adalah jumlah elemen array, lalu diikuti isi array sebanyak n angka. Setelah itu dimasukkan nilai x untuk indeks kelipatan, kemudian indeks yang ingin dihapus, dan terakhir angka yang ingin dicari frekuensinya. Program ini bekerja dengan membaca sejumlah bilangan ke dalam array, lalu menampilkan berbagai informasi seperti seluruh isi array, elemen pada indeks ganjil dan genap, serta elemen dengan indeks kelipatan tertentu. Program juga dapat menghapus elemen pada indeks tertentu dan menampilkan hasil array setelah penghapusan. Selanjutnya, program menghitung rata-rata dan standar deviasi dari data yang ada, lalu menghitung berapa kali suatu angka muncul di dalam array.] 
+![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal2.png)
+[Program ini digunakan untuk menghitung total berat ikan pada setiap wadah serta mencari rata rata berat ikan per wadah. Pada awal program, pengguna diminta memasukkan dua buah bilangan bulat yaitu x dan y. Nilai x menyatakan jumlah ikan yang akan dijual, sedangkan y menyatakan kapasitas jumlah ikan dalam setiap wadah. Setelah itu, pengguna memasukkan data berat ikan sebanyak x buah yang kemudian disimpan ke dalam array. Program akan melakukan proses penjumlahan berat ikan sesuai urutan data yang dimasukkan dan membaginya ke dalam beberapa wadah berdasarkan kapasitas y. Setiap kali jumlah ikan dalam satu wadah sudah memenuhi kapasitas, maka total berat pada wadah tersebut akan ditampilkan dan proses dilanjutkan ke wadah berikutnya. Setelah seluruh data selesai diproses, program akan menghitung rata rata berat ikan dari seluruh wadah yang digunakan dengan cara menjumlahkan seluruh total berat wadah kemudian dibagi banyaknya wadah. Hasil akhir program berupa total berat pada masing-masing wadah serta nilai rata rata berat ikan per wadah.] 
 
 ### 3. [Soal3]
 #### soal3.go
@@ -131,7 +131,5 @@ func main() {
 }
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul9/output/Soal3.png)
-[Program ini digunakan untuk menentukan hasil dari beberapa pertandingan antara dua klub yang diinput oleh pengguna. Pertama, pengguna diminta untuk memasukkan nama dua klub yang akan bertanding. Setelah itu, program akan membaca skor dari setiap pertandingan secara berulang. Setiap skor terdiri dari dua bilangan yang mewakili jumlah gol dari masing-masing klub. Proses input ini akan terus berlangsung hingga pengguna memasukkan nilai negatif pada salah satu skor sebagai tanda untuk menghentikan input.
-Selama proses tersebut, program tidak langsung menampilkan hasil pertandingan, melainkan menyimpan terlebih dahulu hasilnya ke dalam sebuah struktur data berupa slice. Jika skor klub A lebih besar dari klub B, maka nama klub A disimpan sebagai pemenang. Sebaliknya, jika skor klub B lebih besar, maka nama klub B yang disimpan. Jika kedua skor sama, maka hasil pertandingan dicatat sebagai “Draw”.
-Setelah seluruh data pertandingan selesai dimasukkan, program kemudian menampilkan hasil dari setiap pertandingan secara berurutan sesuai dengan urutan input.]
+![Screenshot Output soal3]()
+[Program ini digunakan untuk membantu petugas posyandu dalam mencatat dan mengolah data berat balita. Data berat balita dimasukkan ke dalam array bertipe float64 sehingga dapat menyimpan nilai desimal. Program memiliki dua subprogram utama, yaitu hitungMinMax dan rerata. Subprogram hitungMinMax digunakan untuk mencari nilai berat balita paling kecil dan paling besar dengan cara membandingkan seluruh data dalam array secara berulang. Nilai minimum dan maksimum kemudian dikirim kembali menggunakan parameter pointer. Selanjutnya, subprogram rerata digunakan untuk menghitung rata rata berat balita dengan menjumlahkan seluruh data berat kemudian membaginya dengan jumlah data yang dimasukkan. Setelah seluruh proses selesai dilakukan, program akan menampilkan berat minimum, berat maksimum, dan nilai rata rata berat balita sebagai hasil akhir.]
