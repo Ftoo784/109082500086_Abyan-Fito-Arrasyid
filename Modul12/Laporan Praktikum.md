@@ -59,7 +59,7 @@ func main() {
 }
 ```
 ### Output Soal 1 :
-![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal1.png)
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul12/Output/soal1.png)
 [Program ini digunakan untuk penghitungan suara dalam sebuah pemilihan. Setiap kandidat diberi nomor urut dari 1 hingga 20 dimana Program menerima masukan berupa nomor kandidat yang dipilih oleh pemilih secara berulang sampai pengguna memasukkan angka 0 sebagai tanda bahwa proses input   selesai.
 Untuk memvalidasi suara yang masuk, program menggunakan metode Sequential Search melalui fungsi seqSearch(). Fungsi ini mencari nomor kandidat yang dimasukkan terdapat dalam daftar kandidat yang valid. Jika ditemukan, maka suara tersebut dianggap sah dan jumlah suara kandidat yang bersangkutan akan ditambahkan pada array.
 Selama proses berlangsung, program juga menghitung jumlah seluruh suara yang masuk suaraMasuk dan jumlah suara sah suaraSah. Setelah input selesai, program menampilkan total suara masuk, total suara sah, serta hasil perolehan suara masing-masing kandidat yang memperoleh minimal satu suara.]
@@ -135,7 +135,7 @@ func main() {
 }
 ```
 ### Output Soal 2 :
-![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal2.png)
+![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul12/Output/soal2.png)
 [Berdasarkan program sebelumnya, koding ini digunakan untuk mencari siapa pemenang pemilihan ketua RT. Sekaligus juga ditentukan bahwa wakil ketua RT adalah calon yang mendapatkan suara terbanyak kedua. Pengguna memasukkan nomor kandidat yang dipilih, dan input akan berhenti ketika angka 0 dimasukkan.
 Setiap suara yang masuk dicek menggunakan metode Sequential Search untuk memastikan nomor kandidat valid. Jika valid, suara akan dihitung sebagai suara sah dan ditambahkan ke perolehan kandidat tersebut.
 Setelah semua data selesai dimasukkan, program menampilkan jumlah suara masuk dan jumlah suara sah. Selanjutnya, program mencari dua kandidat dengan perolehan suara terbanyak. Kandidat dengan suara terbanyak ditetapkan sebagai **Ketua RT**, sedangkan kandidat dengan suara terbanyak kedua menjadi Wakil Ketua RT.] 
@@ -192,6 +192,6 @@ func posisi(n, k int) int {
 }
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul10/Output/Soal3.png)
+![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul12/Output/soal3.png)
 [Program ini digunakan untuk mencari posisi suatu angka dalam sebuah array yang sudah terurut menggunakan Binary Search. Pengguna memasukkan jumlah data n, angka yang ingin dicari k, lalu mengisi elemen array.
 Data yang dimasukkan disimpan ke dalam array melalui prosedur isiArray(). Setelah itu, fungsi posisi() melakukan pencarian dengan membagi area pencarian menjadi dua bagian secara berulang hingga angka yang dicari ditemukan atau dipastikan tidak ada di dalam array. Jika angka ditemukan, program akan menampilkan indeks (posisi) angka tersebut dalam array. Jika tidak ditemukan, program akan menampilkan tulisan "TIDAK ADA". Metode Binary Search membuat proses pencarian lebih cepat dibanding pencarian berurutan, terutama untuk jumlah data yang besar.]
