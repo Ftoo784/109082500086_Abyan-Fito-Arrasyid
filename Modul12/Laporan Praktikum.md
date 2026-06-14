@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 10 </h1>
+# <h1 align="center">Laporan Praktikum Modul 12 </h1>
 <p align="center">[Abyan Fito Arrasyid] - [109082500086]</p>
 
 ### 1. [Soal]
