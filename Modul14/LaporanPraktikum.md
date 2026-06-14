@@ -56,7 +56,7 @@ Proses pengurutan dilakukan oleh fungsi "selectionSort". Algoritma Selection Sor
 
 Setelah proses pengurutan selesai, program menampilkan kembali seluruh elemen array yang telah terurut dalam satu baris dengan setiap angka dipisahkan oleh spasi. Langkah tersebut dilakukan untuk setiap kasus uji yang dimasukkan oleh pengguna. Dengan demikian, program mampu mengolah beberapa kelompok data sekaligus dan menghasilkan keluaran berupa urutan bilangan yang telah disusun secara menaik sesuai dengan prinsip kerja algoritma Selection Sort.]
 
-### 2. [Soal2]
+### 2. [Soal]
 #### soal2.go
 
 ```go
@@ -151,7 +151,7 @@ Setelah kedua kelompok bilangan selesai diurutkan, program menampilkan hasil akh
 
 Secara umum, algoritma yang digunakan memiliki kompleksitas waktu sebesar O(n²) pada proses pengurutan karena metode Selection Sort melakukan pencarian elemen minimum atau maksimum secara berulang pada bagian array yang belum terurut. Meskipun kurang efisien untuk data berukuran sangat besar, algoritma ini mudah dipahami dan cocok digunakan untuk mempelajari konsep dasar pengurutan serta manipulasi array dalam bahasa pemrograman Go.] 
 
-### 3. [Soal3]
+### 3. [Soal]
 #### soal3.go
 
 ```go
