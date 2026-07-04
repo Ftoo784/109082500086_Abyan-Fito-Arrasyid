@@ -19,7 +19,7 @@ Output akhir = B C A <br> <br>
 [Program digunakan untuk melakukan pergeseran urutan 3 buah string (circular shift) dengan bantuan variabel sementara (`temp`).]
 
 ### Output Soal 1 :
-![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal1.png)
+![Screenshot Output soal1](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul2/Output/Soal%201.png)
 
 ### 2. [Soal2]
 #### soal2.go
@@ -45,7 +45,7 @@ func main() {
 }
 ```
 ### Output Soal 2 :
-![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal2.png)
+![Screenshot Output soal2](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul2/Output/Soal%202.png)
 [Program digunakan sebagai perulangan sebanyak 5 kali warna dari 4 tabung reaksi. Pada setiap percobaan, program akan mengecek apakah urutan warna yang dimasukkan adalah merah, kuning, hijau, ungu. Jika ada satu saja percobaan yang urutannya berbeda, maka variabel berhasil diubah menjadi false. Setelah semua percobaan selesai, program menampilkan nilai true jika semua urutan benar, atau false jika ada minimal satu urutan yang salah.] 
 
 ### 3. [Soal3]
@@ -84,5 +84,5 @@ func main() {
 }
 ```
 ### Output Soal 3 :
-![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/modul3/Output/Soal3.png)
+![Screenshot Output soal3](https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/Modul2/Output/Soal%203.png)
 [Program digunakan untuk menghitung berat parsel dalam satuan gram, kemudian menghitung jumlah kilogram dan sisa gram menggunakan operasi pembagian (/) dan modulus (%). Biaya pengiriman dihitung sebesar Rp10.000 per kilogram, sedangkan sisa gram dikenakan biaya Rp5 per gram jika sisa gram ≥ 500, atau Rp15 per gram jika sisa gram < 500. Setelah itu, biaya kilogram dan biaya gram dijumlahkan menjadi total biaya. Namun, jika berat parsel lebih dari 10 kg, maka biaya tambahan untuk sisa gram digratiskan sehingga total biaya hanya dihitung dari biaya per kilogram.]
