@@ -1,4 +1,3 @@
-# Repository Praktikum Algoritma Pemrograman 2
 
 Nama : Abyan Fito Arrasyid
 <br>NIM : 109082500086
