@@ -16,7 +16,7 @@ void tukarPointer3(int *a, int *b, int *c) {
 }
 
 int main() {
-    int x = 5, y = 10, z = 15;
+    int x = 67, y = 69, z = 911;
 
     cout << "Kondisi Awal: x = " << x << ", y = " << y << ", z = " << z << endl;
 
