@@ -206,68 +206,68 @@ Program ini memperlihatkan beberapa cara untuk menukar nilai dua variabel menggu
 #include <iostream>
 using namespace std;
 
-const int UKURAN = 3;
+const int N = 3;
 
-void inputMatriks(int matriks[UKURAN][UKURAN], char label) {
-    cout << "Masukkan elemen matriks " << label << " (3x3):\n";
-    for (int r = 0; r < UKURAN; r++) {
-        for (int c = 0; c < UKURAN; c++) {
-            cout << label << "[" << r << "][" << c << "]: ";
-            cin >> matriks[r][c];
+void inputMatriks(int M[N][N], char nama) {
+    cout << "Masukkan elemen matriks " << nama << " (3x3):\n";
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cout << nama << "[" << i << "][" << j << "]: ";
+            cin >> M[i][j];
         }
     }
 }
 
-void cetakMatriks(const int mat[UKURAN][UKURAN]) {
-    for (int row = 0; row < UKURAN; row++) {
-        for (int col = 0; col < UKURAN; col++) {
-            cout << mat[row][col] << "\t";
+void cetakMatriks(const int M[N][N]) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cout << M[i][j] << "\t";
         }
         cout << endl;
     }
 }
 
-void tambahMatriks(const int mat1[UKURAN][UKURAN], const int mat2[UKURAN][UKURAN], int res[UKURAN][UKURAN]) {
-    for (int x = 0; x < UKURAN; x++)
-        for (int y = 0; y < UKURAN; y++)
-            res[x][y] = mat1[x][y] + mat2[x][y];
+void tambahMatriks(const int A[N][N], const int B[N][N], int C[N][N]) {
+    for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
+            C[i][j] = A[i][j] + B[i][j];
 }
 
-void kurangMatriks(const int mat1[UKURAN][UKURAN], const int mat2[UKURAN][UKURAN], int res[UKURAN][UKURAN]) {
-    for (int x = 0; x < UKURAN; x++)
-        for (int y = 0; y < UKURAN; y++)
-            res[x][y] = mat1[x][y] - mat2[x][y];
+void kurangMatriks(const int A[N][N], const int B[N][N], int C[N][N]) {
+    for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
+            C[i][j] = A[i][j] - B[i][j];
 }
 
-void kaliMatriks(const int matA[UKURAN][UKURAN], const int matB[UKURAN][UKURAN], int res[UKURAN][UKURAN]) {
-    for (int r = 0; r < UKURAN; r++) {
-        for (int c = 0; c < UKURAN; c++) {
-            res[r][c] = 0;
-            for (int p = 0; p < UKURAN; p++) {
-                res[r][c] += matA[r][p] * matB[p][c];
+void kaliMatriks(const int A[N][N], const int B[N][N], int C[N][N]) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            C[i][j] = 0;
+            for (int k = 0; k < N; k++) {
+                C[i][j] += A[i][k] * B[k][j];
             }
         }
     }
 }
 
 int main() {
-    int matriksA[UKURAN][UKURAN], matriksB[UKURAN][UKURAN], matriksHasil[UKURAN][UKURAN];
+    int A[N][N], B[N][N], Hasil[N][N];
 
-    inputMatriks(matriksA, 'A');
+    inputMatriks(A, 'A');
     cout << endl;
-    inputMatriks(matriksB, 'B');
+    inputMatriks(B, 'B');
 
     cout << "\n--- Hasil Penjumlahan (A + B) ---\n";
-    tambahMatriks(matriksA, matriksB, matriksHasil);
-    cetakMatriks(matriksHasil);
+    tambahMatriks(A, B, Hasil);
+    cetakMatriks(Hasil);
 
     cout << "\n--- Hasil Pengurangan (A - B) ---\n";
-    kurangMatriks(matriksA, matriksB, matriksHasil);
-    cetakMatriks(matriksHasil);
+    kurangMatriks(A, B, Hasil);
+    cetakMatriks(Hasil);
 
     cout << "\n--- Hasil Perkalian (A * B) ---\n";
-    kaliMatriks(matriksA, matriksB, matriksHasil);
-    cetakMatriks(matriksHasil);
+    kaliMatriks(A, B, Hasil);
+    cetakMatriks(Hasil);
 
     return 0;
 }
@@ -338,47 +338,47 @@ Program ini menggeser posisi nilai tiga variabel secara berurutan menggunakan du
 #include <iostream>
 using namespace std;
 
-int cariMaksimum(int data[], int jumlah) {
-    int nilaiMaks = data[0];
-    for (int i = 1; i < jumlah; i++) {
-        if (data[i] > nilaiMaks) {
-            nilaiMaks = data[i];
+int cariMaksimum(int arr[], int n) {
+    int maks = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > maks) {
+            maks = arr[i];
         }
     }
-    return nilaiMaks;
+    return maks;
 }
 
-int cariMinimum(int data[], int jumlah) {
-    int nilaiMin = data[0];
-    for (int i = 1; i < jumlah; i++) {
-        if (data[i] < nilaiMin) {
-            nilaiMin = data[i];
+int cariMinimum(int arr[], int n) {
+    int min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
         }
     }
-    return nilaiMin;
+    return min;
 }
 
-void hitungRataRata(int data[], int jumlah, float &hasilRata) {
+void hitungRataRata(int arr[], int n, float &rata) {
     float total = 0;
-    for (int i = 0; i < jumlah; i++) {
-        total += data[i];
+    for (int i = 0; i < n; i++) {
+        total += arr[i];
     }
-    hasilRata = total / jumlah;
+    rata = total / n;
 }
 
-void tampilkanArray(int data[], int jumlah) {
+void tampilkanArray(int arr[], int n) {
     cout << "Isi array: ";
-    for (int i = 0; i < jumlah; i++) {
-        cout << data[i] << " ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
     cout << endl;
 }
 
 int main() {
-    int dataAngka[] = {48, 2, 7, 21, 5, 20, 77, 9, 10, 1};
-    int jumlahData = sizeof(dataAngka) / sizeof(dataAngka[0]);
-    int opsi;
-    float rata = 0;
+    int arrA[] = {12, 34, 56, 78, 90, 23, 45, 67, 89, 10};
+    int n = sizeof(arrA) / sizeof(arrA[0]);
+    int pilihan;
+    float rataRata = 0;
 
     do {
         cout << "\n--- Menu Program Array ---\n";
@@ -388,21 +388,21 @@ int main() {
         cout << "4. Hitung nilai rata - rata\n";
         cout << "5. Keluar\n";
         cout << "Pilih menu: ";
-        cin >> opsi;
+        cin >> pilihan;
 
-        switch (opsi) {
+        switch (pilihan) {
             case 1:
-                tampilkanArray(dataAngka, jumlahData);
+                tampilkanArray(arrA, n);
                 break;
             case 2:
-                cout << "Nilai maksimum = " << cariMaksimum(dataAngka, jumlahData) << endl;
+                cout << "Nilai maksimum = " << cariMaksimum(arrA, n) << endl;
                 break;
             case 3:
-                cout << "Nilai minimum = " << cariMinimum(dataAngka, jumlahData) << endl;
+                cout << "Nilai minimum = " << cariMinimum(arrA, n) << endl;
                 break;
             case 4:
-                hitungRataRata(dataAngka, jumlahData, rata);
-                cout << "Nilai rata - rata = " << rata << endl;
+                hitungRataRata(arrA, n, rataRata);
+                cout << "Nilai rata - rata = " << rataRata << endl;
                 break;
             case 5:
                 cout << "Program selesai." << endl;
@@ -410,7 +410,7 @@ int main() {
             default:
                 cout << "Pilihan tidak valid!" << endl;
         }
-    } while (opsi != 5);
+    } while (pilihan != 5);
 
     return 0;
 }
