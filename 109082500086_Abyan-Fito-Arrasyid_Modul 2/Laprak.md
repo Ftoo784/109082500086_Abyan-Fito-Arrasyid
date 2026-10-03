@@ -200,7 +200,7 @@ Program ini memperlihatkan beberapa cara untuk menukar nilai dua variabel menggu
 
 ## Unguided
 
-### 1. (isi dengan soal unguided 1)
+### 1. (Soal 1)
 
 ```C++
 #include <iostream>
@@ -273,7 +273,7 @@ int main() {
 }
 ```
 
-### Output Unguided 1 :
+### Output Soal 1 :
 
 ##### Output 1
 <img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal1.png />
@@ -287,7 +287,7 @@ int main() {
 
 Program ini menerima input elemen dua matriks tiga kali tiga dari pengguna, lalu memproses operasi penjumlahan, pengurangan, dan perkalian di antara keduanya. Seluruh hasil perhitungan tersebut kemudian ditampilkan ke layar secara bertahap melalui fungsi pencetakan matriks.
 
-### 2. (isi dengan soal unguided 2)
+### 2. (Soal 2)
 
 ```C++
 #include <iostream>
@@ -322,7 +322,7 @@ int main() {
 }
 ```
 
-### Output Unguided 2 :
+### Output Soal 2 :
 
 ##### Output 1 
 <img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal2.png />
@@ -332,7 +332,7 @@ int main() {
 
 Program ini menggeser posisi nilai tiga variabel secara berurutan menggunakan dua metode, yaitu referensi dan pointer. Kedua fungsi tersebut secara langsung mengubah nilai variabel asli melalui rujukan alamat memori, sehingga susunan nilai variabel x, y, dan z saling berpindah.
 
-### 3. (isi dengan soal unguided 3)
+### 3. (Soal 3)
 
 ```C++
 #include <iostream>
@@ -416,7 +416,7 @@ int main() {
 }
 ```
 
-### Output Unguided 3 :
+### Output Soal 3 :
 
 ##### Output 1
 <img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal3.png />
