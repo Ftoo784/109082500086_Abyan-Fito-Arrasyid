@@ -276,10 +276,12 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal1.png />
 
 
 
 ##### Output 2
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal1(2).png />
 
 
 
@@ -322,13 +324,11 @@ int main() {
 
 ### Output Unguided 2 :
 
-##### Output 1
-
-
+##### Output 1 
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal2.png />
 
 ##### Output 2
-
-
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal2(2).png />
 
 Program ini menggeser posisi nilai tiga variabel secara berurutan menggunakan dua metode, yaitu referensi dan pointer. Kedua fungsi tersebut secara langsung mengubah nilai variabel asli melalui rujukan alamat memori, sehingga susunan nilai variabel x, y, dan z saling berpindah.
 
@@ -419,10 +419,12 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal3.png />
 
 
 
 ##### Output 2
+<img width="1732" height="208" alt="Soal3_1" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan-Fito-Arrasyid_Modul%202/Output/Soal3(2).png />
 
 
 
