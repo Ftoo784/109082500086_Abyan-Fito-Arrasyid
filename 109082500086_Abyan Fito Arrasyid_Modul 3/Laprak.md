@@ -189,11 +189,12 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1
+##### Output 1 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20020444.png" />
 
 
 
-##### Output 2
+##### Output 2 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20020517.png" />
+
 
 
 
@@ -256,11 +257,11 @@ int main() {
 
 ### Output Unguided 2 :
 
-##### Output 1
+##### Output 1 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20020957.png" />
 
 
 
-##### Output 2
+##### Output 2 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20021049.png" />
 
 
 
@@ -360,11 +361,11 @@ int main() {
 
 ### Output Unguided 3 :
 
-##### Output 1
+##### Output 1 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20021330.png" />
 
 
 
-##### Output 2
+##### Output 2 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%203/output/Screenshot%202026-10-11%20021540.png" />
 
 
 
