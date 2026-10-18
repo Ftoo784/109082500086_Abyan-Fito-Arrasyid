@@ -285,7 +285,7 @@ int main()
 }
 ```
 
-Kode ini 
+Program ini bekerja dengan menginisialisasi senarai kosong melalui createList dan mengalokasikan memori dinamis untuk setiap simpul berisi data mahasiswa melalui fungsi alokasi. Data kemudian dikelola menggunakan operasi penyisipan (insertFirst, insertAfter, insertLast) maupun penghapusan (delFirst, delAfter, delLast) dengan mengatur tautan penunjuk next serta membebaskan memori dinamis via dealokasi. Akhirnya, penelusuran penunjuk dilakukan dari simpul awal hingga Nil untuk mencetak seluruh informasi, menghitung total elemen, atau membebaskan seluruh alokasi memori senarai secara menyeluruh melalui deletelist.
 
 
 ## Unguided
@@ -399,11 +399,11 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1
+##### Output 1 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%204/Output/Screenshot%202026-10-18%20222723.png" />
 
 
 
-##### Output 2
+##### Output 2 <img width="1717" height="366" alt="Soal3_2" src="https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%204/Output/Screenshot%202026-10-18%20222830.png" />
 
 
 
