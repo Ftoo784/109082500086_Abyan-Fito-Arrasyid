@@ -697,12 +697,7 @@ int main()
 
 ### Output Unguided 1 :
 
-##### Output 1
-
-
-
-##### Output 2
-
+##### Output 1 <img width="1717" height="366" alt="Soal3_2" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%205/Output/No_1.png /> 
 
 
 Program menginisialisasi senarai kosong, lalu mengalokasikan dan menyisipkan lima elemen angka secara berurutan ke posisi paling depan (insertFirst) hingga terbentuk urutan data 9 12 8 0 2. Setelah itu, program menelusuri senarai dari awal hingga akhir untuk mencetak isinya, mencari lokasi simpul bernilai 8 menggunakan findElm, serta menjumlahkan seluruh elemen melalui sumInfo yang menghasilkan nilai total 31.
