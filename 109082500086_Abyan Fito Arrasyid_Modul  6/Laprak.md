@@ -874,7 +874,7 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1 <img width="1717" height="366" alt="Soal3_2" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%20%206/Output/Soal1.png />
+##### Output 1 <img width="586" height="936" alt="Soal3_2" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%20%206/Output/Soal1.png />
 
 Program ini mengelola data kendaraan menggunakan Doubly Linked List dengan melakukan pengecekan duplikasi nomor polisi sebelum menyisipkan simpul di posisi awal (insertFirst), lalu menampilkan seluruh informasi (printInfo), mencari data tertentu (findElm), serta menghapus simpul target (deleteFirst, deleteLast, deleteAfter) yang diakhiri pembebasan memori dinamis via dealokasi.
 
