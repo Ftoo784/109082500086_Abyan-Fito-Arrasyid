@@ -653,11 +653,11 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1
+##### Output 1 <img width="405" height="299" alt="Soal3_2" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%207/output/Soal%20(1).png /> 
 
 
 
-##### Output 2
+##### Output 2 <img width="523" height="271" alt="Soal3_2" src=https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%207/output/Soal%20(2).png /> 
 
 
 
