@@ -650,7 +650,7 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1 <img width="1531" height="832" alt="Soal3_1" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%208/Output/Screenshot%202026-11-25%20103258.png/>
+##### Output 1 <img width="1259" height="166" alt="Soal3_1" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%209/Output/Soal%201.png/>
 
 
 Program ini menggabungkan tiga cara kerja antrean (Queue) berbasis array 5 elemen dengan prinsip data pertama masuk keluar duluan (FIFO) dalam satu kode. Pada Alternatif 1, posisi head selalu diam di depan sehingga seluruh elemen di belakangnya harus digeser maju tiap kali ada data yang keluar. Alternatif 2 membiarkan head ikut maju saat data diambil dan baru menggeser isi array ke awal jika terkena penuh semu di ujung indeks. Sementara itu, Alternatif 3 memakai konsep melingkar lewat operasi modulo agar head dan tail bisa berputar balik ke indeks awal tanpa perlu menggeser data sama sekali.
