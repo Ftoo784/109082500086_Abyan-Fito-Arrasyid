@@ -737,7 +737,7 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1
+##### Output 1 <img width="1259" height="166" alt="Soal3_1" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%208/Output/Screenshot%202026-11-25%20103258.png/>
 
 
 
