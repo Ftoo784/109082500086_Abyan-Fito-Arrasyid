@@ -737,7 +737,7 @@ int main() {
 
 ### Output Unguided 1 :
 
-##### Output 1 <img width="1259" height="166" alt="Soal 1" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%209/Output/Soal%201.png/>
+##### Output 1 <img width="1259" height="166" alt="Soal 1" src= https://github.com/Ftoo784/109082500086_Abyan-Fito-Arrasyid/blob/main/109082500086_Abyan%20Fito%20Arrasyid_Modul%2010/Output/Soal%201.png/>
 
 
 Program ini membangun pohon biner secara rekursif dengan menempatkan angka yang lebih kecil di cabang kiri dan yang lebih besar di cabang kanan tanpa duplikat, lalu menelusurinya untuk menghitung jumlah simpul, total nilai, serta kedalaman pohon sekaligus mencetak urutannya secara *In-order*, *Pre-order*, dan *Post-order*.
